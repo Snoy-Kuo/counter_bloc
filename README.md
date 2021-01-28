@@ -4,21 +4,21 @@ Counter App using Bloc to manage state.
 
 ## References
 
- - [Flutter official docs](https://flutter.dev/docs/get-started/test-drive?tab=androidstudio).
+ - [Bloc official tutorial](https://bloclibrary.dev/#/fluttercountertutorial).
 
 ## Widgets/Classes/Libs
 
- - [Colors](https://api.flutter.dev/flutter/material/Colors-class.html)
- - [VisualDensity](https://api.flutter.dev/flutter/material/VisualDensity-class.html)
- - [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
- - [State](https://api.flutter.dev/flutter/widgets/State-class.html)
- - [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
- - [Theme](https://api.flutter.dev/flutter/material/Theme-class.html)
- - [FloatingActionButton](https://api.flutter.dev/flutter/material/FloatingActionButton-class.html)
+ - [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+ - [Bloc](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/Bloc-class.html)
+ - [BlocObserver](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/BlocObserver-class.html)
+ - [BlocProvider](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/BlocProvider-class.html)
+ - [Cubit](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/Cubit-class.html)
+ - [BlocBuilder](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/BlocBuilder-class.html)
+
 
 ## Try
 
- - modify theme primarySwatch to custom MaterialColor of 0xFF2B64A3, and hot reload to see changes.
+ - modify theme primarySwatch to custom MaterialColor of 0xFF4AB953, and hot reload to see changes.
  - add decrement FAB below increment FAB.
  - add test to verify decrement function as expected.
 
