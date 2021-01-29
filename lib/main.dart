@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'colors_util.dart';
 import 'counter/view/counter_page.dart';
 
 void main() {
   Bloc.observer = BlocObserver();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends MaterialApp {
-  const MyApp({Key key}) : super(key: key, home: const CounterPage());
+  MyApp({Key key}) : super(
+      key: key,
+      title: 'Counter Bloc',
+      theme: ThemeData(primarySwatch: createMaterialColor(Color(0xFF4AB953))),
+      home: const CounterPage(),
+  );
 }

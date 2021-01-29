@@ -28,10 +28,24 @@ class CounterView extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => {context.read<CounterCubit>().increment()},
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          FloatingActionButton(
+            key: Key('main_increment_fab'),
+            onPressed: () => {context.read<CounterCubit>().increment()},
+            tooltip: 'Increment',
+            child: Icon(Icons.add),
+          ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+            key: Key('main_decrement_fab'),
+            onPressed: () => {context.read<CounterCubit>().decrement()},
+            tooltip: 'Decrement',
+            child: Icon(Icons.remove),
+          ),
+        ],
       ),
     );
   }
