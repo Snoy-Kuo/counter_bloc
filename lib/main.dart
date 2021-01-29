@@ -6,11 +6,11 @@ import 'counter/view/counter_page.dart';
 
 void main() {
   Bloc.observer = BlocObserver();
-  runApp(MyApp());
+  runApp(CounterApp());
 }
 
-class MyApp extends MaterialApp {
-  MyApp({Key key}) : super(
+class CounterApp extends MaterialApp {
+  CounterApp({Key key}) : super(
       key: key,
       title: 'Counter Bloc',
       theme: ThemeData(primarySwatch: createMaterialColor(Color(0xFF4AB953))),
